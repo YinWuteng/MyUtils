@@ -4,6 +4,7 @@ import yinwuteng.com.myutils.OnMainListener;
 
 /**
  * Created by yinwuteng on 2018/1/25.
+ * 主页数据模型接口
  */
 
 public interface MainBeanModel {
