@@ -1,4 +1,4 @@
-package yinwuteng.com.myutils.okhttpandmvp.model;
+package yinwuteng.com.myutils.mvp.model;
 
 import yinwuteng.com.myutils.OnMainListener;
 

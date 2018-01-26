@@ -1,16 +1,16 @@
-package yinwuteng.com.myutils.okhttpandmvp.present;
+package yinwuteng.com.myutils.mvp.present;
 
 import com.alibaba.fastjson.JSON;
 
 
 import okhttp3.Call;
-import yinwuteng.com.myutils.okhttpandmvp.view.MainView;
-import yinwuteng.com.myutils.okhttpandmvp.bean.MainBean;
-import yinwuteng.com.myutils.okhttpandmvp.model.MainBeanModel;
-import yinwuteng.com.myutils.okhttpandmvp.model.impl.MainModelImple;
+import yinwuteng.com.myutils.mvp.view.MainView;
+import yinwuteng.com.myutils.mvp.bean.MainBean;
+import yinwuteng.com.myutils.mvp.model.MainBeanModel;
+import yinwuteng.com.myutils.mvp.model.impl.MainModelImple;
 import yinwuteng.com.myutils.OnMainListener;
-import yinwuteng.com.myutils.okhttpandmvp.model.PostBeanModel;
-import yinwuteng.com.myutils.okhttpandmvp.model.impl.PostBeanModelImpl;
+import yinwuteng.com.myutils.mvp.model.PostBeanModel;
+import yinwuteng.com.myutils.mvp.model.impl.PostBeanModelImpl;
 
 /**
  * Created by yinwuteng on 2018/1/25.

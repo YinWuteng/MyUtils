@@ -1,4 +1,4 @@
-package yinwuteng.com.myutils.okhttpandmvp.model.impl;
+package yinwuteng.com.myutils.mvp.model.impl;
 
 
 import com.zhy.http.okhttp.OkHttpUtils;
@@ -6,7 +6,7 @@ import com.zhy.http.okhttp.callback.StringCallback;
 
 import okhttp3.Call;
 import yinwuteng.com.myutils.OnMainListener;
-import yinwuteng.com.myutils.okhttpandmvp.model.MainBeanModel;
+import yinwuteng.com.myutils.mvp.model.MainBeanModel;
 
 /**
  * Created by yinwuteng on 2018/1/25.

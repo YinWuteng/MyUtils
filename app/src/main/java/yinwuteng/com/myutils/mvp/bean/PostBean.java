@@ -1,4 +1,4 @@
-package yinwuteng.com.myutils.okhttpandmvp.bean;
+package yinwuteng.com.myutils.mvp.bean;
 
 /**
  * Created by yinwuteng on 2018/1/25.

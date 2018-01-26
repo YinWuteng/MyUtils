@@ -1,7 +1,7 @@
-package yinwuteng.com.myutils.okhttpandmvp.view;
+package yinwuteng.com.myutils.mvp.view;
 
 
-import yinwuteng.com.myutils.okhttpandmvp.bean.MainBean;
+import yinwuteng.com.myutils.mvp.bean.MainBean;
 
 /**
  * Created by yinwuteng on 2018/1/25.
