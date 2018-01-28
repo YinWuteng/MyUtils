@@ -10,6 +10,7 @@ import okhttp3.OkHttpClient;
 
 /**
  * Created by yinwuteng on 2018/1/25.
+ * MyApplication
  */
 
 public class MyApplication extends Application {

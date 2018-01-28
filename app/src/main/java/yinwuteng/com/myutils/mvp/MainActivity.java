@@ -1,19 +1,23 @@
 package yinwuteng.com.myutils.mvp;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.zhy.http.okhttp.OkHttpUtils;
 
+
 import yinwuteng.com.myutils.R;
 import yinwuteng.com.myutils.mvc.MVCActivity;
 import yinwuteng.com.myutils.mvp.view.MainView;
 import yinwuteng.com.myutils.mvp.bean.MainBean;
 import yinwuteng.com.myutils.mvp.present.MainPresent;
+import yinwuteng.com.myutils.permissiondemo.PermissionActivity;
 
 public class MainActivity extends Activity implements MainView, View.OnClickListener {
     private MainPresent present = new MainPresent(this);
@@ -35,10 +39,13 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
         button1.setOnClickListener(this);
         Button btnChange = findViewById(R.id.btn_change);
         btnChange.setOnClickListener(this);
+        Button btnPermission = findViewById(R.id.btn_permission);
+        btnPermission.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
+        Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.btn:
                 //获取内容
@@ -49,7 +56,11 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
                 present.doPost();
                 break;
             case R.id.btn_change:
-                Intent intent = new Intent(MainActivity.this, MVCActivity.class);
+                intent.setClass(MainActivity.this, MVCActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_permission:
+                intent.setClass(MainActivity.this, PermissionActivity.class);
                 startActivity(intent);
                 break;
             default:
