@@ -13,6 +13,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 
 
 import yinwuteng.com.myutils.R;
+import yinwuteng.com.myutils.md.MDActivity;
 import yinwuteng.com.myutils.mvc.MVCActivity;
 import yinwuteng.com.myutils.mvp.view.MainView;
 import yinwuteng.com.myutils.mvp.bean.MainBean;
@@ -41,6 +42,8 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
         btnChange.setOnClickListener(this);
         Button btnPermission = findViewById(R.id.btn_permission);
         btnPermission.setOnClickListener(this);
+        Button btnMd = findViewById(R.id.btn_md);
+        btnMd.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +66,9 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
                 intent.setClass(MainActivity.this, PermissionActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btn_md:
+                intent.setClass(MainActivity.this, MDActivity.class);
+                startActivity(intent);
             default:
                 break;
         }

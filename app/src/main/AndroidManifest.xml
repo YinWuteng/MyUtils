@@ -26,6 +26,10 @@
         </activity>
         <activity android:name=".mvc.MVCActivity" />
         <activity android:name=".permissiondemo.PermissionActivity" />
+        <activity
+            android:name=".md.MDActivity"
+            android:label="@string/toolbar"/>
+        <activity android:name=".md.MdDetailActivity" />
     </application>
 
 </manifest>

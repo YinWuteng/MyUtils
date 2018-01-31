@@ -9,25 +9,31 @@
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:text="获取测试内容" />
 
     <Button
         android:id="@+id/btn_post"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:text="上传" />
 
     <Button
         android:id="@+id/btn_change"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:text="Change Activity" />
 
     <Button
         android:id="@+id/btn_permission"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:text="权限测试" />
 
+    <Button
+        android:id="@+id/btn_md"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material Design"
+        />
 </LinearLayout>
