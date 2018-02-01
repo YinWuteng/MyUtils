@@ -1,4 +1,4 @@
-package yinwuteng.com.myutils.permissiondemo;
+package yinwuteng.com.myutils.permission;
 
 
 import android.Manifest;

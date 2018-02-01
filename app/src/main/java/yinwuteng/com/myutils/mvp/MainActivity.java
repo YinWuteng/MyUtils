@@ -4,7 +4,6 @@ package yinwuteng.com.myutils.mvp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,7 +17,7 @@ import yinwuteng.com.myutils.mvc.MVCActivity;
 import yinwuteng.com.myutils.mvp.view.MainView;
 import yinwuteng.com.myutils.mvp.bean.MainBean;
 import yinwuteng.com.myutils.mvp.present.MainPresent;
-import yinwuteng.com.myutils.permissiondemo.PermissionActivity;
+import yinwuteng.com.myutils.permission.PermissionActivity;
 
 public class MainActivity extends Activity implements MainView, View.OnClickListener {
     private MainPresent present = new MainPresent(this);

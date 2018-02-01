@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".mvc.MVCActivity" />
-        <activity android:name=".permissiondemo.PermissionActivity" />
+        <activity android:name=".permission.PermissionActivity" />
         <activity
             android:name=".md.MDActivity"
             android:label="@string/toolbar"/>
