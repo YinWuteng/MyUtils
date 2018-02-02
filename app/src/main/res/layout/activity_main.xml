@@ -36,4 +36,10 @@
         android:layout_height="wrap_content"
         android:text="Material Design"
         />
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="底部导航栏"
+        />
 </LinearLayout>

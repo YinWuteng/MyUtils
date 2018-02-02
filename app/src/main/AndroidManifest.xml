@@ -30,6 +30,7 @@
             android:name=".md.MDActivity"
             android:label="@string/toolbar"/>
         <activity android:name=".md.MdDetailActivity" />
+        <activity android:name=".md.BottomActivity"/>
     </application>
 
 </manifest>

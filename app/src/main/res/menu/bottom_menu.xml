@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@mipmap/ic_voice"
+        android:title="Voice"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/book"
+        android:enabled="true"
+        android:icon="@mipmap/ic_book"
+        android:title="Books"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/heart"
+        android:enabled="true"
+        android:icon="@mipmap/ic_heart"
+        android:title="Hearts"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/setting"
+        android:enabled="true"
+        android:icon="@mipmap/ic_setting"
+        android:title="Setting"
+        app:showAsAction="ifRoom" />
+</menu>
