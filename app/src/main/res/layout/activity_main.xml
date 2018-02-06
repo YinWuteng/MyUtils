@@ -5,7 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="yinwuteng.com.myutils.mvp.MainActivity">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
@@ -34,12 +40,19 @@
         android:id="@+id/btn_md"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Material Design"
-        />
+        android:text="Material Design" />
+
     <Button
         android:id="@+id/btn_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="底部导航栏"
-        />
+        android:text="底部导航栏" />
+
+    <Button
+        android:id="@+id/btn_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仿美团多级列表" />
+    </LinearLayout>¬
+</ScrollView>
 </LinearLayout>

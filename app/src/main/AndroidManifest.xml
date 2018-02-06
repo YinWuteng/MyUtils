@@ -28,9 +28,10 @@
         <activity android:name=".permission.PermissionActivity" />
         <activity
             android:name=".md.MDActivity"
-            android:label="@string/toolbar"/>
+            android:label="@string/toolbar" />
         <activity android:name=".md.MdDetailActivity" />
-        <activity android:name=".md.BottomActivity"/>
+        <activity android:name=".md.BottomActivity" />
+        <activity android:name=".expandview.ExpandPopTabActivity" />
     </application>
 
 </manifest>

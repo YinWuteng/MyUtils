@@ -2,6 +2,7 @@ package yinwuteng.com.myutils.mvp;
 
 
 import android.app.Activity;
+import android.app.ExpandableListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 
 
 import yinwuteng.com.myutils.R;
+import yinwuteng.com.myutils.expandview.ExpandPopTabActivity;
 import yinwuteng.com.myutils.md.BottomActivity;
 import yinwuteng.com.myutils.md.MDActivity;
 import yinwuteng.com.myutils.mvc.MVCActivity;
@@ -46,6 +48,8 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
         btnMd.setOnClickListener(this);
         Button btnBottom = findViewById(R.id.btn_bottom);
         btnBottom.setOnClickListener(this);
+        Button btnExpand = findViewById(R.id.btn_expand);
+        btnExpand.setOnClickListener(this);
     }
 
     @Override
@@ -70,13 +74,14 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
                 break;
             case R.id.btn_md:
                 intent.setClass(MainActivity.this, MDActivity.class);
-
+                break;
             case R.id.btn_bottom:
                 intent.setClass(MainActivity.this, BottomActivity.class);
-
+                break;
+            case R.id.btn_expand:
+                intent.setClass(MainActivity.this, ExpandPopTabActivity.class);
             default:
                 break;
-
         }
         startActivity(intent);
     }
