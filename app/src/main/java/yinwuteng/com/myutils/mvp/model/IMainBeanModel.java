@@ -7,7 +7,7 @@ import yinwuteng.com.myutils.OnMainListener;
  * 主页数据模型接口
  */
 
-public interface MainBeanModel {
+public interface IMainBeanModel {
     /**
      * 获取数据模块操作接口
      */

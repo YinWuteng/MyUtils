@@ -13,7 +13,7 @@ import okhttp3.Call;
 import yinwuteng.com.myutils.OnMainListener;
 import yinwuteng.com.myutils.R;
 import yinwuteng.com.myutils.mvc.bean.MVCBean;
-import yinwuteng.com.myutils.mvc.model.MVCModel;
+import yinwuteng.com.myutils.mvc.model.IMVCModel;
 import yinwuteng.com.myutils.mvc.model.impl.MVCModelImpl;
 
 /**
@@ -22,7 +22,7 @@ import yinwuteng.com.myutils.mvc.model.impl.MVCModelImpl;
  */
 
 public class MVCActivity extends Activity {
-    private MVCModel mvcModel;
+    private IMVCModel IMVCModel;
     private TextView tvCode;
     private TextView tvDesc;
     private ProgressBar progressBar;
@@ -39,13 +39,13 @@ public class MVCActivity extends Activity {
     private void initView() {
         tvCode = findViewById(R.id.tv_code);
         tvDesc = findViewById(R.id.tv_desc);
-        mvcModel = new MVCModelImpl();
+        IMVCModel = new MVCModelImpl();
         progressBar = findViewById(R.id.progressBar);
     }
 
     private void displayJson(String url) {
         progressBar.setVisibility(View.VISIBLE);
-        mvcModel.getUrl(url, new OnMainListener() {
+        IMVCModel.getUrl(url, new OnMainListener() {
             @Override
             public void success(String response) {
                 MVCBean json = JSON.parseObject(response, MVCBean.class);

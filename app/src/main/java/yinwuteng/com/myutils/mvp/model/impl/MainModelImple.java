@@ -6,14 +6,14 @@ import com.zhy.http.okhttp.callback.StringCallback;
 
 import okhttp3.Call;
 import yinwuteng.com.myutils.OnMainListener;
-import yinwuteng.com.myutils.mvp.model.MainBeanModel;
+import yinwuteng.com.myutils.mvp.model.IMainBeanModel;
 
 /**
  * Created by yinwuteng on 2018/1/25.
  * 首页获取实现
  */
 
-public class MainModelImple implements MainBeanModel {
+public class MainModelImple implements IMainBeanModel {
     //模拟测试登录
     @Override
     public void login(String userName, String password, String url, final OnMainListener listener) {

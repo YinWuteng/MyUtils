@@ -2,7 +2,6 @@ package yinwuteng.com.myutils.mvp;
 
 
 import android.app.Activity;
-import android.app.ExpandableListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

@@ -8,6 +8,6 @@ import yinwuteng.com.myutils.OnMainListener;
  *
  */
 
-public interface PostBeanModel {
+public interface IPostBeanModel {
     void postModel(String name, String password, String url, OnMainListener listener);
 }

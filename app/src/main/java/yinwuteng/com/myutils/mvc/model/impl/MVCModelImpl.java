@@ -5,14 +5,14 @@ import com.zhy.http.okhttp.callback.StringCallback;
 
 import okhttp3.Call;
 import yinwuteng.com.myutils.OnMainListener;
-import yinwuteng.com.myutils.mvc.model.MVCModel;
+import yinwuteng.com.myutils.mvc.model.IMVCModel;
 
 /**
  * Created by yinwuteng on 2018/1/26.
  * 网络请求实现
  */
 
-public class MVCModelImpl implements MVCModel {
+public class MVCModelImpl implements IMVCModel {
     @Override
     public void getUrl(String url, final OnMainListener listener) {
         OkHttpUtils.get().url(url).tag(this).build().execute(new StringCallback() {

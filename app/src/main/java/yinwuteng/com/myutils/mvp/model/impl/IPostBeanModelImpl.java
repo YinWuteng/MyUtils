@@ -8,14 +8,14 @@ import okhttp3.Call;
 import okhttp3.MediaType;
 import yinwuteng.com.myutils.OnMainListener;
 import yinwuteng.com.myutils.mvp.bean.PostBean;
-import yinwuteng.com.myutils.mvp.model.PostBeanModel;
+import yinwuteng.com.myutils.mvp.model.IPostBeanModel;
 
 /**
  * Created by yinwuteng on 2018/1/25.
  * 上传数据实现
  */
 
-public class PostBeanModelImpl implements PostBeanModel {
+public class IPostBeanModelImpl implements IPostBeanModel {
     @Override
     public void postModel(String name, String password, String url, final OnMainListener listener) {
         PostBean bean = new PostBean();

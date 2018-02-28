@@ -7,6 +7,6 @@ import yinwuteng.com.myutils.OnMainListener;
  * 网络请求接口
  */
 
-public interface MVCModel {
+public interface IMVCModel {
     void getUrl(String url, OnMainListener listener);
 }
