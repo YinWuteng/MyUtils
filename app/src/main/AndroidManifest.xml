@@ -31,7 +31,8 @@
             android:label="@string/toolbar" />
         <activity android:name=".md.MdDetailActivity" />
         <activity android:name=".md.BottomActivity" />
-        <activity android:name=".expandview.ExpandPopTabActivity" />
+        <activity android:name=".expandview.ExpandPopTabActivity"
+            />
     </application>
 
 </manifest>

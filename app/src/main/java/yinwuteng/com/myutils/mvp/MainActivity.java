@@ -12,7 +12,6 @@ import com.zhy.http.okhttp.OkHttpUtils;
 
 
 import yinwuteng.com.myutils.R;
-import yinwuteng.com.myutils.expandview.ExpandPopTabActivity;
 import yinwuteng.com.myutils.md.BottomActivity;
 import yinwuteng.com.myutils.md.MDActivity;
 import yinwuteng.com.myutils.mvc.MVCActivity;
@@ -78,7 +77,7 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
                 intent.setClass(MainActivity.this, BottomActivity.class);
                 break;
             case R.id.btn_expand:
-                intent.setClass(MainActivity.this, ExpandPopTabActivity.class);
+                break;
             default:
                 break;
         }
