@@ -61,7 +61,7 @@ public class AlgorithmUtil {
         for (out = 1; out < arr.length; out++) {
             in = out;
             temp = arr[out];
-            while (in > 0 && arr[in - 1] > arr[in]) {
+            while (in > 0 && arr[in - 1] > temp) {
                 arr[in] = arr[in - 1];
                 in--;
             }
