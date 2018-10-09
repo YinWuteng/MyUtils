@@ -117,4 +117,5 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
         //取消请求
         OkHttpUtils.getInstance().cancelTag(this);
     }
+
 }
