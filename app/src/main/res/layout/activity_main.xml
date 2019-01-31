@@ -49,10 +49,10 @@
         android:text="底部导航栏" />
 
     <Button
-        android:id="@+id/btn_expand"
+        android:id="@+id/btn_mvvm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="仿美团多级列表" />
+        android:text="MVVM" />
     </LinearLayout>¬
 </ScrollView>
 </LinearLayout>

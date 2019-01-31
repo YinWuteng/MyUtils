@@ -18,6 +18,7 @@ import yinwuteng.com.myutils.mvc.MVCActivity;
 import yinwuteng.com.myutils.mvp.view.MainView;
 import yinwuteng.com.myutils.mvp.bean.MainBean;
 import yinwuteng.com.myutils.mvp.present.MainPresent;
+import yinwuteng.com.myutils.mvvm.MVVMActivity;
 import yinwuteng.com.myutils.permission.PermissionActivity;
 
 public class MainActivity extends Activity implements MainView, View.OnClickListener {
@@ -46,8 +47,8 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
         btnMd.setOnClickListener(this);
         Button btnBottom = findViewById(R.id.btn_bottom);
         btnBottom.setOnClickListener(this);
-        Button btnExpand = findViewById(R.id.btn_expand);
-        btnExpand.setOnClickListener(this);
+        Button btnMvvm = findViewById(R.id.btn_mvvm);
+        btnMvvm.setOnClickListener(this);
     }
 
     @Override
@@ -64,24 +65,27 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
                 break;
             case R.id.btn_change:
                 intent.setClass(MainActivity.this, MVCActivity.class);
-
+                startActivity(intent);
                 break;
             case R.id.btn_permission:
                 intent.setClass(MainActivity.this, PermissionActivity.class);
-
+                startActivity(intent);
                 break;
             case R.id.btn_md:
                 intent.setClass(MainActivity.this, MDActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_bottom:
                 intent.setClass(MainActivity.this, BottomActivity.class);
+                startActivity(intent);
                 break;
-            case R.id.btn_expand:
+            case R.id.btn_mvvm:
+                intent.setClass(MainActivity.this, MVVMActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;
         }
-        startActivity(intent);
     }
 
     @Override
@@ -96,7 +100,7 @@ public class MainActivity extends Activity implements MainView, View.OnClickList
 
     @Override
     public String getUrl() {
-//        String url = "http://wanandroid.com/tools/mockapi/2008/get_code";
+        //        String url = "http://wanandroid.com/tools/mockapi/2008/get_code";
         String url = "http://192.168.127.22:8080/TestServlet";
         return url;
     }
