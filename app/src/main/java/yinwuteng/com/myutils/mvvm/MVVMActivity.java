@@ -1,6 +1,6 @@
 package yinwuteng.com.myutils.mvvm;
 
-import android.databinding.DataBindingComponent;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -34,20 +34,7 @@ public class MVVMActivity extends AppCompatActivity {
     }
 
     private void click(ActivityFirst binding) {
-        binding.setOnClick(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.btn_1:
-                        Toast.makeText(MVVMActivity.this, "button1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.btn_2:
-                        Toast.makeText(MVVMActivity.this, "button2", Toast.LENGTH_SHORT).show();
 
-                        break;
-                }
-            }
-        });
         binding.setName("风清扬");
         binding.setAge(30);
         binding.setMan(true);
@@ -62,7 +49,31 @@ public class MVVMActivity extends AppCompatActivity {
 
         String[] arrays = {"张无忌", "慕容龙城"};
         binding.setArrays(arrays);
+        final ObSwordsman obSwordsman = new ObSwordsman("任我行", "A");
+        binding.setObswordman(obSwordsman);
+        binding.setOnClick(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.btn_1:
+                        Toast.makeText(MVVMActivity.this, "button1", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.btn_2:
+                        // Toast.makeText(MVVMActivity.this, "button2", Toast.LENGTH_SHORT).show();
+                        obSwordsman.setName("石破天");
+                        break;
+                    case R.id.bt_update_bind:
+                        obSwordsman.setName("任我行");
+                        break;
+                    case R.id.btn_recycler:
+                        Intent intent = new Intent();
+                        intent.setClass(MVVMActivity.this, RecyclerActivity.class);
+                        startActivity(intent);
+                        break;
 
+                }
+            }
+        });
     }
 
 }

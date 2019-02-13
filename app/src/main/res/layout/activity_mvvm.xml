@@ -8,6 +8,10 @@
             type="yinwuteng.com.myutils.mvvm.Swordsman" />
 
         <variable
+            name="obswordman"
+            type="yinwuteng.com.myutils.mvvm.ObSwordsman" />
+
+        <variable
             name="onClick"
             type="android.view.View.OnClickListener" />
 
@@ -100,9 +104,32 @@
             android:layout_height="wrap_content"
             android:text="@{arrays[1]}" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{obswordman.name}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@={obswordman.name}" />
+        <Button
+            android:id="@+id/bt_update_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双向绑定重置"
+            android:onClick="@{onClick}"
+            />
+        <Button
+            android:id="@+id/btn_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="recycler"
+            android:onClick="@{onClick}"
+            />
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@{Utils.getName(sword)}" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@{Utils.getName(sword)}" />-->
     </LinearLayout>
 </layout>

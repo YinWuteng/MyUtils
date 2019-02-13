@@ -34,6 +34,7 @@
         <activity android:name=".md.MdDetailActivity" />
         <activity android:name=".md.BottomActivity" />
         <activity android:name=".mvvm.MVVMActivity" />
+        <activity android:name=".mvvm.RecyclerActivity" />
     </application>
 
 </manifest>
