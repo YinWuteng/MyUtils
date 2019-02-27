@@ -35,6 +35,7 @@
         <activity android:name=".md.BottomActivity" />
         <activity android:name=".mvvm.MVVMActivity" />
         <activity android:name=".mvvm.RecyclerActivity" />
+        <activity android:name=".camera.CameraActivity" />
     </application>
 
 </manifest>
