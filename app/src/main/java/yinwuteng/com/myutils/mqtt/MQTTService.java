@@ -66,6 +66,8 @@ public class MQTTService extends Service {
     @Override
     public void onDestroy() {
         try {
+            client.unregisterResources();
+            client.close();
             client.disconnect();
         } catch (MqttException e) {
             e.printStackTrace();

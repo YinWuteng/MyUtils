@@ -3,8 +3,6 @@ package yinwuteng.com.myutils.camera;
 
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,10 +26,10 @@ public class CameraFragment extends Fragment implements SurfaceHolder.Callback {
     private boolean mIsSurfaceCreated = false;
     private static final int CAMERA_ID = 0; //选择后置摄像头
 
-    @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView( LayoutInflater inflater,  ViewGroup container,
+                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_camera, container, false);
         intiView(view);
         return view;
