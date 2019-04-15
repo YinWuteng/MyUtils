@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义倒计时按钮属性-->
+    <declare-styleable name="TimeButton">
+        <!--结束后的文字-->
+        <attr name="tb_after_text" format="string"/>
+        <!--倒计时总时长，毫秒-->
+        <attr name="tb_totalTime" format="integer"/>
+        <!--事件间隔，毫秒-->
+        <attr name="tb_timeInterval" format="integer"/>
+    </declare-styleable>
+</resources>
